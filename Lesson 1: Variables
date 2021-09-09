@@ -1,0 +1,14 @@
+var message = 'Hello world! 2';
+var Message = ''; // другая переменная
+var helloMessage = 'Hello again'; //принято писать кэмелом
+
+var $ = 'Dollar'; // можно
+var _ = 'Underscore'; // можно
+
+var massage2 = 'Hello world message 2'; // хороший тон
+var massage3 = "Hello world message 3"; // плохой тон
+// нельзя начинать с цифр
+
+var сообщение = 'Сообщение!' // можно писать на русском переменную, но не принято
+
+console.log(сообщение) //можно писать код без точки с запятой
