@@ -1,0 +1,41 @@
+/*
+  &&  |  true  |  false
+true  |  true  |  false
+false |  false |  false
+
+  ||  |  true  |  false
+true  |  true  |  true
+false |  true |  false
+
+&& (и) - true если все значения true
+|| (или) - true хоть одно значение true
+! (нет) - инвентирует true или false
+*/
+
+var currentYear = 2018
+var carName = 'Ford'
+var carYear = 2014
+var carAge = currentYear - carYear
+
+// если возраст машины меньше 5 лет, то ...
+// если возраст машины больше или равно 5 годам и оно меньше или равно 10 годам, то ...
+// иначе ...
+
+if (carAge < 5) {
+console.log(carName + ' младше 5 лет')
+} else if (carAge >= 5 && carAge <= 10) {
+ console.log(carName + ' больше или равен 5 годам и меньше или равен 10 годам')
+} else {
+ console.log('Возраст ' + carName + ' равняется ' + carAge + ' годам')
+}
+
+// false: 0 null undefined '' NaN
+// true: заполненая строка, число
+
+var empty = ''
+
+if (empty) {
+ console.log('Значение true')
+} else {
+console.log('Значение false') 
+}
