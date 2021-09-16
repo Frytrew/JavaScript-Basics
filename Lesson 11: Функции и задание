@@ -1,0 +1,24 @@
+var carName = 'Ford'
+var carYear = 2010
+var personYear = 1990
+
+function calculateAge (year) {
+    var currentYear = 2018
+    var result = currentYear - year
+    return result
+}
+
+function checkAndLogAge(year, a, b) {
+    if (calculateAge (year) < a) {
+        console.log('Возраст ' + b + ' меньше ' + a + ' лет')
+    } else {
+        console.log('Возраст ' + b + ' больше ' + a + ' лет')
+    }
+}
+
+checkAndLogAge (carYear, 10, 'машины')
+checkAndLogAge (personYear, 10, 'человека')
+
+// Перепишите функцию checkAndLogAge таким образом, чтобы:
+// 1. В консоли можно было определить, что это за объект (человек или машина)
+// 2. Мы могли сами определять с каким возрастом сравнивать (не только 10 лет, но и любой другой возраст), причем это должно быть отображено в консоли.
