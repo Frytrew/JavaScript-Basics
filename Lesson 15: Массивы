@@ -1,0 +1,26 @@
+var cars = ['Ford', 'Mazda', 'Kia', 'BMW']
+console.log(cars)
+console.log(cars[2])
+
+console.log(cars.length)
+
+cars.push('Audi') // добавит в конец
+console.log(cars)
+
+// cars.pop()
+// console.log(cars) // удаляет последний элемент
+
+var audi = cars.pop()
+console.log(cars, audi) // возвращает последний удаленный элемент
+
+var ford = cars.shift()
+console.log(cars, ford) // удаляет и возвращает первый элемент
+
+cars.unshift(audi)
+console.log(cars) // добавляет в начало
+
+console.log(cars.indexOf('Kia')) // находим, есть ли киа
+
+var index = cars.indexOf('Kia') // нашли нужную нам машину
+var kia = cars [index]
+console.log(kia)
